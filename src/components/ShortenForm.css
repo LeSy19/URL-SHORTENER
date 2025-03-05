@@ -1,0 +1,81 @@
+/* Làm cho trang full màn hình */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Chiều cao full màn hình */
+    width: 100vw;  /* Chiều rộng full màn hình */
+    background-color: #f4f4f4;
+  }
+  
+  /* Khung chính */
+  .shortener-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+  }
+  
+  /* Tiêu đề */
+  .shortener-box h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  /* Ô nhập URL */
+  .input-field {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Nút rút gọn */
+  .shorten-btn {
+    width: 100%;
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+  }
+  
+  .shorten-btn:hover {
+    background: #0056b3;
+  }
+  
+  /* Kết quả URL */
+.result {
+    margin-top: 12px;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Căn theo cột để chữ và link nằm gọn */
+  }
+  
+  .result a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .result a:hover {
+    text-decoration: underline;
+  }
+  
+  
